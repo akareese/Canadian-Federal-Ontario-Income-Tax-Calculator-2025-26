@@ -20,11 +20,7 @@ def save_database(data):
 
 
 def generate_tax_id(year: int | None = None) -> str:
-    """
-    Generates an ID like: TX-2026-8F3A-K21D
-    - Uses secrets for high-quality randomness
-    - Uppercase letters + digits, avoiding confusing characters
-    """
+
     if year is None:
         year = datetime.now().year
 
@@ -59,4 +55,5 @@ def store_tax_return(inputs, result):
 
 def retrieve_tax_return(tax_id: str):
     db = load_database()
+
     return db.get(tax_id)
