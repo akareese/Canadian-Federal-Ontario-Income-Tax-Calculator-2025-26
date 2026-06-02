@@ -4,5 +4,4 @@ In addition to calculation, the project includes a simple return-saving and retr
 
 ![Visuals](demo1.jpg)
 
-https://ontario-income-tax-calulator-2025-2026-ethanreis.streamlit.app/
-
+Income Tax Calculator App 
