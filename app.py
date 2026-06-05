@@ -2,7 +2,7 @@ import streamlit as st
 from tax_calculation import TaxInputs, compute_taxes
 from database import store_tax_return, retrieve_tax_return
 
-st.set_page_config(page_title="Canadian Income Tax Calculator", layout="centered")
+st.set_page_config(page_title="Canadian Income Tax Calculator",  page_icon="🧾", layout="centered")
 
 def money_input(label, default="0"):
     value = st.text_input(label, value=default)
